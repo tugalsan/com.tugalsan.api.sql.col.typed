@@ -28,10 +28,9 @@ public class TGS_SQLColTypedUtils {
         return FAMILY_LNG().concat("TIME");
     }
 
-    @Deprecated
     public static String TYPE_LNGDOUBLE() {
-        return FAMILY_LNG().concat("FLOAT");
-    }//DONT CHANGE THE VALUE!
+        return FAMILY_LNG().concat("FLOAT");//DONT CHANGE THE VALUE 'FLOAT'! HARDCODED AS COLUMN NAME
+    }
 
     public static String TYPE_LNGLINK() {
         return FAMILY_LNG().concat("LINK");
