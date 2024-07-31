@@ -28,6 +28,7 @@ public class TGS_SQLColTypedUtils {
         return FAMILY_LNG().concat("TIME");
     }
 
+    
     public static String TYPE_LNGDOUBLE() {
         return FAMILY_LNG().concat("FLOAT");//DONT CHANGE THE VALUE 'FLOAT'! HARDCODED AS COLUMN NAME
     }
@@ -123,7 +124,6 @@ public class TGS_SQLColTypedUtils {
         return typeLngTime(col.columnName);
     }
 
-    @Deprecated
     public static boolean typeLngDbl(CharSequence columnName) {
         return columnName.toString().startsWith(TYPE_LNGDOUBLE());
     }

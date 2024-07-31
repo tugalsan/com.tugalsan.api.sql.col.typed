@@ -44,7 +44,6 @@ public class TGS_SQLColTyped {
         return TGS_SQLColTypedUtils.typeLngTime(columnName);
     }
 
-    @Deprecated
     public boolean typeLngDbl() {
         return TGS_SQLColTypedUtils.typeLngDbl(columnName);
     }
