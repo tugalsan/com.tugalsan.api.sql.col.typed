@@ -8,7 +8,7 @@ public class TGS_SQLColTyped {
         return new TGS_SQLColTyped(columnName);
     }
 
-    public TGS_SQLColTyped(CharSequence columnName) {
+    private TGS_SQLColTyped(CharSequence columnName) {
         this.columnName = columnName.toString();
     }
     final public String columnName;
