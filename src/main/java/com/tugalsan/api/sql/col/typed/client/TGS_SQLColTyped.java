@@ -1,5 +1,7 @@
 package com.tugalsan.api.sql.col.typed.client;
 
+import java.util.Objects;
+
 public class TGS_SQLColTyped {
 
     public static TGS_SQLColTyped of(CharSequence columnName) {
@@ -74,5 +76,27 @@ public class TGS_SQLColTyped {
 
     public boolean typeBytesStr() {
         return TGS_SQLColTypedUtils.typeBytesStr(columnName);
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 67 * hash + Objects.hashCode(this.columnName);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final TGS_SQLColTyped other = (TGS_SQLColTyped) obj;
+        return Objects.equals(this.columnName, other.columnName);
     }
 }
